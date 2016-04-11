@@ -1,0 +1,44 @@
+-- 用户user
+INSERT INTO user(u_id,u_pwd,u_name,u_nick,u_phoneno,u_location,u_hobby) VALUES ('10142510116','111111','崔宇璇','c','15221636208','计软学院','篮球');
+INSERT INTO user(u_id,u_pwd,u_name,u_nick,u_phoneno,u_location,u_hobby) VALUES ('10132510155','941105','朱远青','dilemma','12345678901','计软学院','篮球,羽毛球');
+
+-- announcement
+INSERT INTO announcement(a_title,a_time,a_img,a_label,a_brief_intro, a_description) VALUES ('庆祝校运动会圆满召开','2015-10-21','http://a2.qpic.cn/psb?/V10ZjOOW0LMgye/CScyU3o6Gq5P.EU5pbnwv7C0NdNYtUIUta98JDuHJd8!/b/dHIBAAAAAAAA&bo=IAPCAQAAAAAFB8Q!&rf=viewer_4','校运动会','热烈庆祝校运动会顺利举办','一年一度的运动会如期而至.“沙场秋点兵”的壮阔,想必给了我们难以言喻的激情.于是,我放下手中的笔,去感受脉搏与心跳的激烈.在期盼中,在意料中,是悲是喜,是欢是狂,都未可知,但可知的是我们拥有 这样一场运动盛会.我们曾经不计成本地付出都将在这和梦碰撞的季节里得到肯定和兑现,结局并不重要,让我们的智力、体力得以平等竞争,在竞争中透出我们执着的精神、自信的精神.我们渴望,我们支持,我们为登上领奖台的英雄喝彩,我们也为失败者鼓掌.因为,短短的一瞬间可以凝固成永恒的画面,述说不老的追求,演绎勇敢的品质.在今天的赛场上,我只是个场边的看客.我用眼睛见证了赛场上的是非成败,用心灵感受了运动员的喜怒哀乐.他坚持跑完全程,我学到了坚持的可贵,他摔倒了再站起来,我学会了不怕失败的勇气.场上每一个点滴,都如此的震撼我的心灵.在今天的赛场上,我只是个场边的看客,但我学到了很多.人生的路,有坦途,也有坎坷,做过的岁月,有欢笑,也有苦涩,泪水告诉我一个跌倒的故事,汗水使我多了一份沉重,几多成熟.理想毕竟不同于现实,失败是生活的一部分,谁也无法选择,无法抗拒,人生要自己去拼搏,去奋斗,在风雨中百折不饶勇往直前.流泪不是失落,徘徊不是迷惑,成功属于那些战胜失败,坚持不懈,勇于追求梦想的人.');
+
+INSERT INTO announcement(a_title,a_time,a_img,a_label,a_brief_intro, a_description) VALUES ('#计软院足球赛#|精彩球赛，赛况播报','http://a2.qpic.cn/psb?/V10ZjOOW0LMgye/OuLaC5.9zy6G0WiAh0v3SW.6mLS9SHJrxnXctXe3VeA!/b/dHIBAAAAAAAA&bo=IAPRAQAAAAAFANA!&rf=viewer_4','足球赛','计软院足球赛况播报','#计软院足球赛#第二场老腊肉杯比赛结束了！大二队伍攻势迅猛，防守积极，在常规时间结束时凭借陈伟哲的两粒进球2：1领先，然而因为上一场比赛3:4负于大三队伍，双方以5:5进入加时赛，大三队伍凭借更加丰富的经验用防守反击战术在终场前绝杀对手，取得胜利。在此恭喜大三队伍，并感谢所有球员带给我们如此精彩的比赛。');
+
+INSERT INTO announcement(a_title,a_time,a_img,a_label,a_brief_intro, a_description) VALUES ('放肆吧！青春！| 计软院首次运动会','2015-10-13','http://a1.qpic.cn/psb?/V10ZjOOW0LMgye/*SYcTvpFRh8.dDmca0W0.kSw2mmEknAo7vM0fBeSr3o!/b/dIYBAAAAAAAA&bo=IAMVAgAAAAAFABc!','计软院运动会','院运动会即将举办，欢迎小伙伴们来报名','在九月下旬我们了解到我们很荣幸地成为计算机科学与软件工程学院的第一批学子(ง•̀_•́)ง，而本月二十一号，我们将迎来我院首届运动会（此处有撒花❁ε٩(๑> ₃ <)۶ з❁） 加一句希望各位小伙伴们能踊跃参与(ง•̀_•́)ง二十一号在共青场，让我们在运动中挥洒汗水，在运动中演绎青春(๑•̀ㅂ•́)و✧');
+
+INSERT INTO announcement(a_title,a_time,a_img,a_label,a_brief_intro, a_description) VALUES ('挑战地心引力，引爆篮球魅力！','2015-10-07','http://a1.qpic.cn/psb?/V10ZjOOW0LMgye/5sDBhIqZTVpQy9cMkbqpoaU49oO6BjnFFqUEd2h.SGE!/b/dHQBAAAAAAAA&bo=IAMVAgAAAAAFABc!','计软院篮球赛','最近篮球俱乐部的比赛结果新鲜粗炉～','#2015年计软院篮球俱乐部# 这里是篮球俱乐部(ง •̀_•́)ง，我们有引爆赛场氛围的四大赛事：无论是紧张刺激的男子5V5、竞争激烈的女子3V3、不可多见的教师投篮赛，还是阵容豪华的年级表演赛，我们都用心针对所有细节做出最合理的安排(ง •̀_•́)ง。 无朋友，不篮球！无需犹豫，各班球队积极组建中，踊跃参加，点燃这个赛季(๑•̀ㅂ•́)و✧');
+
+INSERT INTO announcement(a_title,a_time,a_img,a_label,a_brief_intro, a_description) VALUES ('军训拾记 ——写于2015年8月30日 傍晚！','2015-08-31','http://mmbiz.qpic.cn/mmbiz/RcCNoYZwAowPhM53e6cXQBMYg3AuZEzrYzn5wrb8ictPp6NQfXyOZ9LAibOXeSTGlH0fATWlNxzibDb1XfTR0IxaA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1','计软院军训','军训那些天发生的那些基情四射的事情owo','在数架战斗机低空掠过的轰鸣声和一辆绕着限速5公里的校园巡回飙车的神秘跑车扫过的强劲尾音的背景乐合奏下，提前半个小时来到操场跑道上列好方阵的我们开始了下午的训练。 训练一开始，教官跟我们说上午说好的下午要进行会操的比赛因故移到了明天早上。我们不禁大呼上当，上午就是因为这个被教官们骗着多训练了半个多小时啊！军训这些天的教官总是在变化，上午带我们的那个严厉的教官去带了二班的训练。我们迎来的是另外一位比较和蔼的教官——以及他的基情拍档——设计学院的教官。我们的队列在红色的跑道上走着正步向前走，那位教官在一旁擅自发出“立定”的口号试图干扰我们的正常训练，欣慰的是，就像球场上球迷吹的野哨一样，我们并没有失去自己的定力，而是不为所动，继续踏着我们整齐的步伐向前走。你要认识到，思想统一是多么的重要。你在西南一隅唱红打黑，整个城市都被歌声染成了红色，让人觉得这是第二个中央，总是要出事的。看到如此整齐的我们，我们自己的教官也感到十分的自豪，不禁走到他的基情拍档旁，他面对着走来的他，他走向面对着的他，留下一个轻佻却不失稳重的眼神，扔下一句：“你小子干什么，捣乱是不是。”看到我们的队列已经深入了他方的领地，设计学院的教官不干了，马上召集自己的方队站好队列，宛如一堵墙堵在了我们的面前让我们无法前进。见状，我们的教官只好叫我们向后转，掉头向来时的方向走。男人的心里总是充满了自尊的暗流，特别是在面对着一个对自己有着特殊意义，每天在军营里一起训练生活的男人时，这条暗流便变得格外的汹涌。暗流汹涌，推动着他带着我们重新走到了设计学院的训练领地上。不出他的意料，那个男人早已组织好自己的队列，又堵住了他的去路。
+　　物理上的去路被阻断，心理上的防线总是有办法攻破的，他想。“我们来喊一遍口号，把他们给吓退回去，好不好！”他发出了攻坚的号令。“好！”我们的回应虽称不上整齐响亮，但我们的决心是不容怀疑的。“一！二！三！四！”我们的四声撕裂的呐喊化作了教官手中的炮弹，一发又一发的向那个男人的心里扔去。怎么样，我的同学们真为我争气，你怕了吗！此刻，他是如此的自信。“同学们，我们喊给他们看什么才是真正全校最洪亮的口号！”对面的那个男人不愧是他挚爱的战友，他最明白，他的内心岂止有一条自尊的暗流，那是一条江河，波涛汹涌。“一！二！三！四！”“一二！…..三四！”对面的方阵喊出了同样嘹亮的口号，那一阵阵声浪，化作了一支支利剑，射向我们教官的内心。
+　　烈日下，两个男人早已满脸通红，这份红，岂只是被太阳的热浪熏陶过。此刻，胜负已经不重要了，他们相视一笑，同时对着队伍发出了向后转的口令，带领着各自的方阵相背而行。他们知道，明天早上将是他们最终的对决。烈日偷走了我们身上的汗水，化作夕阳躲进了不为人知的深处。明天早上，阳光将再次照耀着我们，将胜利的曙光洒向付出汗水最多的那一方。');
+
+
+-- download
+INSERT INTO download(d_name,d_url,d_date) VALUES ('2015阳光体育篮球规程','http://pan.baidu.com/s/1kTtn8Ez','2015-09-09');
+INSERT INTO download(d_name,d_url,d_date) VALUES ('2015阳光体育足球规程','http://pan.baidu.com/s/1o6CeuKi','2015-11-11');
+
+-- bbs
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','你最喜欢哪个篮球明星？','篮球,球星','http://img5.imgtn.bdimg.com/it/u=1885990055,1005222348&fm=21&gp=0.jpg','小伙伴们来讨论一下你们喜欢哪个篮球球星呗～','2015-11-02');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','关于NBA赛季的揭幕战的讨论','篮球,NBA','http://f7.topit.me/7/98/ad/11179592219ffad987o.jpg','小伙伴们来讨论一下这个赛季NBA的揭幕战呗～','2015-11-02');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','在男寝中你最喜欢和室友一起做什么运动？','男生,运动','http://static.freepik.com/free-photo/soap_2653800.jpg','男寝的小伙伴们不要害羞，大声的说出你们的心声～','2015-11-03');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','你们体育课最喜欢逃课去干嘛？','体育,运动','http://zj.sinaimg.cn/2014/1119/U8953P1134DT20141119104458.jpg','大家一球来讨论一下呗～最近体育课很无聊呀～','2015-11-03');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','你们最喜欢哪个网球明星','网球,运动','http://pic.baike.soso.com/p/20130625/20130625161045-1992884221.jpg','大家一球来讨论一下呗～那个网球明星你最心水～','2015-11-03');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','你们最喜欢哪个排球明星','网球,运动','http://www.cq.xinhuanet.com/news/2010-10/29/xin_2731007291016875323318.jpg','大家一球来讨论一下呗～那个排球明星你最心水～','2015-11-03');
+
+INSERT INTO bbs(u_id,b_title,b_label, b_img,b_content,b_time) VALUES ('10142510116','你们最喜欢哪个羽毛球明星','网球,运动','http://pic1.nipic.com/2008-12-12/20081212224311948_2.jpg','大家一球来讨论一下呗～那个羽毛球明星你最心水～','2015-11-03');
+
+-- commentary
+INSERT INTO commentary(b_id,u_id,c_title, c_content,c_time) VALUES ('7','10142510116','最喜欢闫健男神','男神不仅是运动全能，体育课上对待妹子们也特别的温柔，不愧是百里挑一的好老师','2015-11-03');
+
+
+-- appointment
+INSERT INTO appointment(u_id,y_title,y_label, y_content,y_place,y_num,y_play_time,y_time) VALUES ('10132510155','来打羽毛球约♀吗？','badminton','软院有没有妹子愿意和本男神一起打羽毛球？','大活羽毛球场','2','1','2015-11-04 17:00:00');
+INSERT INTO appointment(u_id,y_title,y_label, y_content,y_place,y_num,y_play_time,y_time) VALUES ('10142510116','来来来打篮球约起来！','basketball','软院有没有来一起打篮球的？','五舍前篮球场','10','1','2015-11-04 16:00:00');
