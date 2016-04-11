@@ -1,0 +1,162 @@
+CREATE TABLE announcement (
+  a_id int AUTO_INCREMENT NOT NULL, 
+  a_title varchar(20) DEFAULT NULL,
+  a_time datetime DEFAULT NULL,
+  a_img varchar(200) DEFAULT NULL,
+  a_label varchar(200) DEFAULT NULL,
+  a_brief_intro varchar(200) DEFAULT NULL,
+  a_description varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (a_id)
+);
+
+
+CREATE TABLE user (
+  u_id varchar(20) NOT NULL,  -- 学号
+  u_pwd varchar(20) DEFAULT NULL,
+  u_name varchar(20) DEFAULT NULL,
+  u_nick varchar(100) DEFAULT NULL,  -- 昵称
+  u_sex tinyint(1) DEFAULT NULL,  -- 0为女性 1为男性
+  u_relationship_status tinyint(1) DEFAULT NULL,  -- 0为单身中，1为恋爱中
+  u_hobby varchar(2000) DEFAULT NULL,
+  u_description varchar(2000) DEFAULT NULL,
+  u_img varchar(200) DEFAULT NULL,  -- 头像
+  u_location varchar(40) DEFAULT NULL,
+  u_email varchar(40) DEFAULT NULL,
+  u_phoneno varchar(20) DEFAULT NULL,
+  u_qq varchar(12) DEFAULT NULL,
+  u_msn varchar(20) DEFAULT NULL,
+  PRIMARY KEY (u_id)
+);
+
+CREATE TABLE reservation (
+  
+  r_id int AUTO_INCREMENT NOT NULL,
+  
+  r_org varchar(20) DEFAULT NULL,
+  
+  r_person varchar(20) DEFAULT NULL,
+  
+  r_phoneno varchar(100) DEFAULT NULL,
+  
+  r_name varchar(20) DEFAULT NULL,
+  
+  r_type enum('basketball','tennis','badminton','table_tennis') DEFAULT 'basketball',
+  
+  r_starttime datetime DEFAULT NULL,
+  
+  r_endtime datetime DEFAULT NULL,
+  
+  PRIMARY KEY (r_id)
+
+);
+
+CREATE TABLE download (
+  
+  d_id int AUTO_INCREMENT NOT NULL,
+  
+  d_name varchar(20) DEFAULT NULL,
+  
+  d_url varchar(200) DEFAULT NULL,
+  
+  d_date date DEFAULT NULL,
+  
+  PRIMARY KEY (d_id)
+
+);
+
+CREATE TABLE bbs (
+  
+  
+  b_id int AUTO_INCREMENT NOT NULL,
+  
+  
+  u_id varchar(20) DEFAULT NULL,
+  
+  
+  b_title varchar(20) DEFAULT NULL,
+  
+  
+  b_label varchar(200) DEFAULT NULL,
+  
+  
+  b_img varchar(200) DEFAULT NULL, -- 配图
+  
+  
+  b_content varchar(2000) DEFAULT NULL,
+  
+  
+  b_time datetime DEFAULT NULL,
+  
+  
+  PRIMARY KEY (b_id),
+
+  
+  CONSTRAINT id_fk foreign key (u_id) references user (u_id)
+
+
+);
+
+CREATE TABLE commentary (
+  -- for bbs
+  
+  c_id int AUTO_INCREMENT NOT NULL,
+
+  b_id int NOT NULL,
+
+  
+  u_id varchar(20) NOT NULL,
+  
+  
+  c_title varchar(20) DEFAULT NULL,
+
+  
+  c_content varchar(2000) DEFAULT NULL,
+  
+  
+  c_time datetime DEFAULT NULL,
+  
+  
+  PRIMARY KEY (c_id),
+
+  
+  CONSTRAINT uid_fk foreign key (u_id) references user (u_id),
+  CONSTRAINT bid_fk foreign key (b_id) references bbs (b_id)
+
+);
+
+CREATE TABLE appointment (
+  
+  
+  y_id int AUTO_INCREMENT NOT NULL,
+  
+  
+  u_id varchar(20) DEFAULT NULL,
+  
+  
+  y_title varchar(20) DEFAULT NULL,
+  
+  
+  y_label enum('basketball','tennis','badminton','soccer','table_tennis','volleyball','billiards') DEFAULT 'basketball',
+
+     y_content varchar(2000) DEFAULT NULL,
+  
+  
+  y_place varchar(200) DEFAULT NULL,
+
+  
+  y_num int DEFAULT NULL,
+  
+  
+  y_play_time tinyint(1) DEFAULT NULL, -- 约定打球的时间
+
+  1-7周一到周日
+  y_time datetime DEFAULT NULL, -- 发布该信息的时间
+  
+  
+  PRIMARY KEY (y_id),
+
+  
+  CONSTRAINT uid_fk2 foreign key (u_id) references user (u_id)
+
+
+);
