@@ -7,4 +7,4 @@
  */
 $mysql_servername = "localhost"; //�����ַ
 $mysql_username = "root"; //��ݿ��û���
-$mysql_password =""; //��ݿ�����
+$mysql_password ="961922"; //��ݿ�����

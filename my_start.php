@@ -134,16 +134,16 @@
             $row = mysqli_fetch_array($result);
             if($i<($page-1)*$per_page_num)continue;
 
-            $id=$row['y_id'];0
-            $uid=$row['u_id'];1
-            $title=$row['y_titl2e'];
-            $label=$row['y_label3'];
-            $content=$row['y_cont4ent'];
-            $place=$row['y_place']5;
-            $num=$row['y_num'];6
-            $playtime=$row['y_pl7ay_time'];
-            $time=$row['y_time'];8
-			$isuse=$ro9w['y_isuse'];
+            $id=$row['y_id'];
+            $uid=$row['u_id'];
+            $title=$row['y_title'];
+            $label=$row['y_label'];
+            $content=$row['y_content'];
+            $place=$row['y_place'];
+            $num=$row['y_num'];
+            $playtime=$row['y_play_time'];
+            $time=$row['y_time'];
+            $isuse=$row['y_isuse'];
 
 
             if($i%$per_page_num==0)
